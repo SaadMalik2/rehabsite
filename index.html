@@ -26,22 +26,25 @@
 
 <!-- Scrollable Banner with Links -->
 <section class="bg-gray-800 text-white py-4 fixed w-full z-10 top-0 left-0">
-    <div class="container mx-auto flex justify-between items-center px-5">
+    <div class="container mx-auto flex justify-between items-center px-5 sm:flex-col sm:space-y-4 sm:items-start">
+        <!-- Logo Section -->
         <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <img src="Photos/logo.png" alt="logo" class="w-10 h-10 rounded-full bg-black">
             <span class="ml-3 text-xl">Khayaban Rehab Centre</span>
         </a>
-        <nav class="flex space-x-8">
-            <a href="#services" class="hover:text-gray-400">Our Services</a>
-            <a href="#treatments" class="hover:text-gray-400">Treatments</a>
-            <a href="#internships" class="hover:text-gray-400">Internships</a>
-            <a href="#contact" class="hover:text-gray-400">Contact</a>
-            <a href="https://whatsapp.com/channel/0029VawCNjF3QxRwFxXtaO1U" target="_blank" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-            Get Connected
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-        </a>
+
+        <!-- Navigation Links -->
+        <nav class="flex space-x-8 sm:space-x-4 sm:flex-col sm:items-start">
+            <a href="#services" class="hover:text-gray-400 text-lg sm:text-base">Services</a>
+            <a href="#treatments" class="hover:text-gray-400 text-lg sm:text-base">Treatments</a>
+            <a href="#internships" class="hover:text-gray-400 text-lg sm:text-base">Internships</a>
+            <a href="#contact" class="hover:text-gray-400 text-lg sm:text-base">Contact</a>
+            <a href="https://whatsapp.com/channel/0029VawCNjF3QxRwFxXtaO1U" target="_blank" class="inline-flex items-center bg-green-500 text-white border-0 py-2 px-4 focus:outline-none hover:bg-green-600 rounded text-base mt-4 md:mt-0 sm:mt-2">
+                Get Connected
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
         </nav>
     </div>
 </section>
@@ -59,6 +62,7 @@
         });
     });
 </script>
+
 
       <section class="text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
