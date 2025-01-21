@@ -9,47 +9,55 @@
 <body>
 
 <header class="text-gray-600 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        
-
-        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900"> </a>
-            <a class="mr-5 hover:text-gray-900"> </a>
-            <a class="mr-5 hover:text-gray-900"> </a>
-            <a class="mr-5 hover:text-gray-900"> </a>
-        </nav>
-
-        <!-- Updated "Get Connected" button -->
-        
-    </div>
-</header>
-
 <!-- Scrollable Banner with Links -->
 <section class="bg-gray-800 text-white py-4 fixed w-full z-10 top-0 left-0">
-    <div class="container mx-auto flex justify-between items-center px-5 sm:flex-col sm:space-y-4 sm:items-start">
+    <div class="container mx-auto flex justify-between items-center px-5 sm:px-10">
         <!-- Logo Section -->
-        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <a class="flex title-font font-medium items-center text-white">
             <img src="Photos/logo.png" alt="logo" class="w-10 h-10 rounded-full bg-black">
             <span class="ml-3 text-xl">Khayaban Rehab Centre</span>
         </a>
 
         <!-- Navigation Links -->
-        <nav class="flex space-x-8 sm:space-x-4 sm:flex-col sm:items-start">
-            <a href="#services" class="hover:text-gray-400 text-lg sm:text-base">Services</a>
-            <a href="#treatments" class="hover:text-gray-400 text-lg sm:text-base">Treatments</a>
-            <a href="#internships" class="hover:text-gray-400 text-lg sm:text-base">Internships</a>
-            <a href="#contact" class="hover:text-gray-400 text-lg sm:text-base">Contact</a>
-            <a href="https://whatsapp.com/channel/0029VawCNjF3QxRwFxXtaO1U" target="_blank" class="inline-flex items-center bg-green-500 text-white border-0 py-2 px-4 focus:outline-none hover:bg-green-600 rounded text-base mt-4 md:mt-0 sm:mt-2">
+        <nav class="hidden sm:flex space-x-8">
+            <a href="#services" class="hover:text-gray-400 text-lg">Services</a>
+            <a href="#treatments" class="hover:text-gray-400 text-lg">Treatments</a>
+            <a href="#internships" class="hover:text-gray-400 text-lg">Internships</a>
+            <a href="#contact" class="hover:text-gray-400 text-lg">Contact</a>
+            <a href="https://whatsapp.com/channel/0029VawCNjF3QxRwFxXtaO1U" target="_blank" class="inline-flex items-center bg-green-500 text-white border-0 py-2 px-4 focus:outline-none hover:bg-green-600 rounded text-base">
                 Get Connected
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
             </a>
         </nav>
+
+        <!-- Mobile Navigation (Hamburger Menu) -->
+        <div class="sm:hidden">
+            <button class="text-white" onclick="toggleMobileMenu()">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobileMenu" class="sm:hidden bg-gray-800 text-white p-4 space-y-4 hidden">
+        <a href="#services" class="block text-lg hover:text-gray-400">Services</a>
+        <a href="#treatments" class="block text-lg hover:text-gray-400">Treatments</a>
+        <a href="#internships" class="block text-lg hover:text-gray-400">Internships</a>
+        <a href="#contact" class="block text-lg hover:text-gray-400">Contact</a>
+        <a href="https://whatsapp.com/channel/0029VawCNjF3QxRwFxXtaO1U" target="_blank" class="inline-flex items-center bg-green-500 text-white py-2 px-4 focus:outline-none hover:bg-green-600 rounded text-base">
+            Get Connected
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+        </a>
     </div>
 </section>
 
-<!-- JavaScript for Smooth Scrolling -->
+<!-- JavaScript for Smooth Scrolling and Mobile Menu Toggle -->
 <script>
     // Smooth scroll to sections when clicked on a link
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -61,7 +69,16 @@
             });
         });
     });
+
+    // Toggle the mobile menu
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+    }
 </script>
+
+</header>
+
 
 
       <section class="text-gray-600 body-font">
