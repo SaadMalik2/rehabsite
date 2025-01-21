@@ -32,7 +32,32 @@
     </div>
 </header>
 
+<!-- Scrollable Banner with Links -->
+<section class="bg-gray-800 text-white py-4 fixed w-full z-10 top-0 left-0">
+    <div class="container mx-auto flex justify-between items-center px-5">
+        <h1 class="text-2xl font-bold">Khayaban Rehab Center</h1>
+        <nav class="flex space-x-8">
+            <a href="#services" class="hover:text-gray-400">Our Services</a>
+            <a href="#treatments" class="hover:text-gray-400">Treatments</a>
+            <a href="#internships" class="hover:text-gray-400">Internships</a>
+            <a href="#contact" class="hover:text-gray-400">Contact</a>
+        </nav>
+    </div>
+</section>
 
+<!-- JavaScript for Smooth Scrolling -->
+<script>
+    // Smooth scroll to sections when clicked on a link
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 
       <section class="text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -49,9 +74,7 @@
             </a>
             <a href="https://maps.app.goo.gl/GCF3FWiRFxtq9fUSA" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                 Visit Us
-            </a>
-            
-             
+            </a>  
             </div>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -61,6 +84,7 @@
       </section>
 
 <!-- Services Section -->
+<section id="services" class="pt-24">
 <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
@@ -69,7 +93,6 @@
                 At Khayaban Rehab Center, we offer a wide range of comprehensive services tailored to meet the unique needs of our patients. Explore our offerings below.
             </p>
         </div>
-
         <!-- Interactive Accordion Section -->
         <div class="lg:w-2/3 mx-auto">
             <!-- Service 1 -->
@@ -86,7 +109,6 @@
                     <b>Holistic Therapies:</b> Complementary therapies like mindfulness, yoga, art therapy, and recreational activities for a balanced approach to recovery.
                 </div>
             </div>
-
             <!-- Service 2 -->
             <div class="border-b border-gray-200 mb-4">
                 <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-gray-100" onclick="toggleAccordion('service2')">
@@ -102,7 +124,6 @@
                     Each accommodation is thoughtfully designed to promote healing and comfort during recovery.
                 </div>
             </div>
-
             <!-- Service 3 -->
             <div class="border-b border-gray-200 mb-4">
                 <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-gray-100" onclick="toggleAccordion('service3')">
@@ -120,7 +141,7 @@
         </div>
     </div>
 </section>
-
+</section>
 <!-- JavaScript for Accordion -->
 <script>
     function toggleAccordion(id) {
@@ -132,11 +153,7 @@
         }
     }
 </script>
-
-
-
-    
-         <!-- stats row code  -->
+ <!-- stats row code  -->
      <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
@@ -187,9 +204,9 @@
           </div>
         </div>
       </section>
-
-       <!-- stats row code  -->
+    
 <!-- Treatments Section -->
+<section id="treatments" class="pt-24">
 <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
@@ -198,7 +215,6 @@
                 At Khayaban Rehab Center, we offer specialized treatment programs for various substance use and mental health disorders. Explore our treatments below.
             </p>
         </div>
-
         <!-- Interactive Accordion Section -->
         <div class="lg:w-2/3 mx-auto">
             <!-- Addiction Treatment -->
@@ -219,7 +235,6 @@
                     Our addiction programs are tailored to meet individual needs, ensuring effective recovery.
                 </div>
             </div>
-
             <!-- Mental Health Treatment -->
             <div class="border-b border-gray-200 mb-4">
                 <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-gray-100" onclick="toggleAccordion('mentalHealthTreatment')">
@@ -246,23 +261,7 @@
         </div>
     </div>
 </section>
-
-<!-- JavaScript for Accordion -->
-<script>
-    function toggleAccordion(id) {
-        const section = document.getElementById(id);
-        if (section.classList.contains('hidden')) {
-            section.classList.remove('hidden');
-        } else {
-            section.classList.add('hidden');
-        }
-    }
-</script>
-
-
-
- <!-- Hero Section code  -->
-   <!-- Hero Section code  -->
+</section>
      <!-- Hero Section code  -->
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
@@ -335,11 +334,10 @@
         </div>
       </section>
 
- <!-- Hero Section code  -->
-   <!-- Hero Section code  -->
-     <!-- Hero Section code  -->
+
 
 <!-- Internship Section -->
+<section id="internships" class="pt-24">
 <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
@@ -353,12 +351,9 @@
         </div>
     </div>
 </section>
+</section>
 
-
-  
 <!-- testimonial code  -->
-
-
 <div class="container px-5 py-24 mx-auto">
   <div class="flex flex-col text-center w-full mb-20">
     <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
@@ -397,17 +392,12 @@
       </div>
     </div>
   </section>
-  
-<!-- testimonial code  -->
 
-    
-<!-- contact and map code  -->
- <!-- contact and map code  -->
+
   <!-- contact and map code  -->
-
+<section id="contact" class="pt-24">
       <section class="text-gray-600 body-font relative">
         <div class="absolute inset-0 bg-gray-300">
-        
           <iframe 
     src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3321.8645926601057!2d73.04528887569862!3d33.6347527733171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDM4JzA1LjEiTiA3M8KwMDInNTIuMyJF!5e0!3m2!1sen!2s!4v1730631434489!5m2!1sen!2s" 
     width="100%" 
@@ -422,9 +412,6 @@
     title="map" 
     scrolling="no">
 </iframe>
-
-
-
         </div>
         <div class="container px-5 py-24 mx-auto flex">
           <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
@@ -443,30 +430,17 @@
           </div>
         </div>
       </section>
-<!-- contact and map code  -->
- <!-- contact and map code  -->
-  <!-- contact and map code  -->
+</section>
 
-
-
-<!-- 
-base footer code  -->
-<!-- 
-base footer code  -->
-<!-- 
-base footer code  -->
+<!--base footer code  -->
 
       <footer class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-
         <img src="Photos/logo.png" alt="logo" class="w-10 h-10 rounded-full bg-black">
-
         <span class="ml-3 text-xl">Khayaban Rehab Centre</span>
       </a>
-
-
       <p class="mt-2 text-sm text-gray-500"></p>
     </div>
 
@@ -501,14 +475,7 @@ base footer code  -->
     </div>
   </div>
 </footer>
-
-
-<!-- 
-base footer code  -->
-<!-- 
-base footer code  -->
-<!-- 
-base footer code  -->
+<!--base footer code  -->
     
 </body>
 </html>
