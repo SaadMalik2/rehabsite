@@ -112,8 +112,6 @@
 </section>
 
 <!-- Services Section -->
-
-    
 <section id="services" class="pt-24 bg-green-100">
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
@@ -127,8 +125,11 @@
             <div class="lg:w-2/3 mx-auto">
                 <!-- Service 1 -->
                 <div class="border-b border-gray-300 mb-4">
-                    <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-green-200" onclick="toggleAccordion('service1')">
+                    <button class="w-full flex justify-between items-center text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-green-200" onclick="toggleAccordion('service1', 'arrow-service1')">
                         Detoxification, Therapy, and Relapse Prevention
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" id="arrow-service1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
                     </button>
                     <div id="service1" class="hidden px-4 py-2 text-gray-700 bg-white rounded-md shadow-md">
                         <b>Detoxification and Medical Supervision:</b> Safe, supervised detox to manage withdrawal symptoms.<br>
@@ -141,8 +142,11 @@
                 </div>
                 <!-- Service 2 -->
                 <div class="border-b border-gray-300 mb-4">
-                    <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-green-200" onclick="toggleAccordion('service2')">
+                    <button class="w-full flex justify-between items-center text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-green-200" onclick="toggleAccordion('service2', 'arrow-service2')">
                         Comfortable and Supportive Accommodations
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" id="arrow-service2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
                     </button>
                     <div id="service2" class="hidden px-4 py-2 text-gray-700 bg-white rounded-md shadow-md">
                         Khayaban Rehab Center offers a range of comfortable accommodations designed to create a safe and supportive environment:
@@ -156,8 +160,11 @@
                 </div>
                 <!-- Service 3 -->
                 <div class="border-b border-gray-300 mb-4">
-                    <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-green-200" onclick="toggleAccordion('service3')">
+                    <button class="w-full flex justify-between items-center text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-green-200" onclick="toggleAccordion('service3', 'arrow-service3')">
                         High-Quality Medical and Nutritional Support
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" id="arrow-service3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
                     </button>
                     <div id="service3" class="hidden px-4 py-2 text-gray-700 bg-white rounded-md shadow-md">
                         At Khayaban Rehab Center, we provide:
@@ -173,18 +180,21 @@
     </section>
 </section>
 
-</section>
 <!-- JavaScript for Accordion -->
 <script>
-    function toggleAccordion(id) {
-        const section = document.getElementById(id);
+    function toggleAccordion(contentId, arrowId) {
+        const section = document.getElementById(contentId);
+        const arrow = document.getElementById(arrowId);
         if (section.classList.contains('hidden')) {
             section.classList.remove('hidden');
+            arrow.classList.add('rotate-180'); // Rotate the arrow
         } else {
             section.classList.add('hidden');
+            arrow.classList.remove('rotate-180'); // Reset the rotation
         }
     }
 </script>
+
  <!-- stats row code  -->
      <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
@@ -352,7 +362,7 @@
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="Photos/gallery image/03.jpg">
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
             <h2 class="tracking-widest text-sm title-font font-medium text-green-500 mb-1">Office</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3"></h1>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Khayaban Rehab Centre</h1>
             <p class="leading-relaxed">We provide a dedicated private room for family meetings, ensuring a comfortable space to engage with our center's management for support and guidance.</p>
           </div>
         </div>
