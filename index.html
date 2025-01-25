@@ -111,65 +111,68 @@
   </div>
 </section>
 
-
 <!-- Services Section -->
-<section id="services" class="pt-24">
-<section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Services</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-                At Khayaban Rehab Center, we offer a wide range of comprehensive services tailored to meet the unique needs of our patients. Explore our offerings below.
-            </p>
+
+    
+<section id="services" class="pt-24 bg-green-100">
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Services</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                    At Khayaban Rehab Center, we offer a wide range of comprehensive services tailored to meet the unique needs of our patients. Explore our offerings below.
+                </p>
+            </div>
+            <!-- Interactive Accordion Section -->
+            <div class="lg:w-2/3 mx-auto">
+                <!-- Service 1 -->
+                <div class="border-b border-gray-300 mb-4">
+                    <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-green-200" onclick="toggleAccordion('service1')">
+                        Detoxification, Therapy, and Relapse Prevention
+                    </button>
+                    <div id="service1" class="hidden px-4 py-2 text-gray-700 bg-white rounded-md shadow-md">
+                        <b>Detoxification and Medical Supervision:</b> Safe, supervised detox to manage withdrawal symptoms.<br>
+                        <b>Individual and Group Therapy:</b> Evidence-based therapies like CBT, DBT, and peer support groups for mental and substance use disorders.<br>
+                        <b>Family Counseling:</b> Therapy sessions for families to build understanding and support networks.<br>
+                        <b>Dual Diagnosis Treatment:</b> Specialized care for patients with both substance use and mental health disorders.<br>
+                        <b>Relapse Prevention:</b> Training in coping skills and strategies to prevent relapse.<br>
+                        <b>Holistic Therapies:</b> Complementary therapies like mindfulness, yoga, art therapy, and recreational activities for a balanced approach to recovery.
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="border-b border-gray-300 mb-4">
+                    <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-green-200" onclick="toggleAccordion('service2')">
+                        Comfortable and Supportive Accommodations
+                    </button>
+                    <div id="service2" class="hidden px-4 py-2 text-gray-700 bg-white rounded-md shadow-md">
+                        Khayaban Rehab Center offers a range of comfortable accommodations designed to create a safe and supportive environment:
+                        <ul class="list-disc ml-6">
+                            <li><b>Individual Rooms:</b> Private rooms with essential amenities for tranquility and recovery.</li>
+                            <li><b>Shared Rooms:</b> Options for two patients per room, fostering camaraderie and support.</li>
+                            <li><b>Dedicated Wards:</b> Group living spaces encouraging social interaction and community.</li>
+                        </ul>
+                        Each accommodation is thoughtfully designed to promote healing and comfort during recovery.
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="border-b border-gray-300 mb-4">
+                    <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-green-200" onclick="toggleAccordion('service3')">
+                        High-Quality Medical and Nutritional Support
+                    </button>
+                    <div id="service3" class="hidden px-4 py-2 text-gray-700 bg-white rounded-md shadow-md">
+                        At Khayaban Rehab Center, we provide:
+                        <ul class="list-disc ml-6">
+                            <li><b>Medications:</b> Tailored, up-to-date medicines administered safely for effective recovery.</li>
+                            <li><b>Nutritious Meals:</b> Balanced, hygienic diets to enhance physical and mental well-being.</li>
+                        </ul>
+                        Our holistic care approach ensures healthier lifestyles and supports patients on their journey to recovery.
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Interactive Accordion Section -->
-        <div class="lg:w-2/3 mx-auto">
-            <!-- Service 1 -->
-            <div class="border-b border-gray-200 mb-4">
-                <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-gray-100" onclick="toggleAccordion('service1')">
-                    Detoxification, Therapy, and Relapse Prevention
-                </button>
-                <div id="service1" class="hidden px-4 py-2 text-gray-700">
-                    <b>Detoxification and Medical Supervision:</b> Safe, supervised detox to manage withdrawal symptoms.<br>
-                    <b>Individual and Group Therapy:</b> Evidence-based therapies like CBT, DBT, and peer support groups for mental and substance use disorders.<br>
-                    <b>Family Counseling:</b> Therapy sessions for families to build understanding and support networks.<br>
-                    <b>Dual Diagnosis Treatment:</b> Specialized care for patients with both substance use and mental health disorders.<br>
-                    <b>Relapse Prevention:</b> Training in coping skills and strategies to prevent relapse.<br>
-                    <b>Holistic Therapies:</b> Complementary therapies like mindfulness, yoga, art therapy, and recreational activities for a balanced approach to recovery.
-                </div>
-            </div>
-            <!-- Service 2 -->
-            <div class="border-b border-gray-200 mb-4">
-                <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-gray-100" onclick="toggleAccordion('service2')">
-                    Comfortable and Supportive Accommodations
-                </button>
-                <div id="service2" class="hidden px-4 py-2 text-gray-700">
-                    Khayaban Rehab Center offers a range of comfortable accommodations designed to create a safe and supportive environment:
-                    <ul class="list-disc ml-6">
-                        <li><b>Individual Rooms:</b> Private rooms with essential amenities for tranquility and recovery.</li>
-                        <li><b>Shared Rooms:</b> Options for two patients per room, fostering camaraderie and support.</li>
-                        <li><b>Dedicated Wards:</b> Group living spaces encouraging social interaction and community.</li>
-                    </ul>
-                    Each accommodation is thoughtfully designed to promote healing and comfort during recovery.
-                </div>
-            </div>
-            <!-- Service 3 -->
-            <div class="border-b border-gray-200 mb-4">
-                <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-gray-100" onclick="toggleAccordion('service3')">
-                    High-Quality Medical and Nutritional Support
-                </button>
-                <div id="service3" class="hidden px-4 py-2 text-gray-700">
-                    At Khayaban Rehab Center, we provide:
-                    <ul class="list-disc ml-6">
-                        <li><b>Medications:</b> Tailored, up-to-date medicines administered safely for effective recovery.</li>
-                        <li><b>Nutritious Meals:</b> Balanced, hygienic diets to enhance physical and mental well-being.</li>
-                    </ul>
-                    Our holistic care approach ensures healthier lifestyles and supports patients on their journey to recovery.
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 </section>
+
 </section>
 <!-- JavaScript for Accordion -->
 <script>
@@ -235,7 +238,7 @@
       </section>
     
 <!-- Treatments Section -->
-<section id="treatments" class="pt-24">
+<section id="treatments" class="pt-24 bg-green-100">
 <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
@@ -366,7 +369,7 @@
 
 
 <!-- Internship Section -->
-<section id="internships" class="pt-24">
+<section id="internships" class="pt-24 bg-green-100">
 <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
