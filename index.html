@@ -236,63 +236,83 @@
           </div>
         </div>
       </section>
-    
-<!-- Treatments Section -->
+ <!-- Treatments Section -->
 <section id="treatments" class="pt-24 bg-green-100">
-<section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Treatments</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-                At Khayaban Rehab Center, we offer specialized treatment programs for various substance use and mental health disorders. Explore our treatments below.
-            </p>
-        </div>
-        <!-- Interactive Accordion Section -->
-        <div class="lg:w-2/3 mx-auto">
-            <!-- Addiction Treatment -->
-            <div class="border-b border-gray-200 mb-4">
-                <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-gray-100" onclick="toggleAccordion('addictionTreatment')">
-                    Addiction Treatment Programs
-                </button>
-                <div id="addictionTreatment" class="hidden px-4 py-2 text-gray-700">
-                    We offer specialized treatment for a variety of addictions, including:
-                    <ul class="list-disc ml-6">
-                        <li>Heroin</li>
-                        <li>Cannabis and Hashish</li>
-                        <li>Amphetamines</li>
-                        <li>Tranquilizers</li>
-                        <li>Crystal Meth</li>
-                        <li>Alcohol</li>
-                    </ul>
-                    Our addiction programs are tailored to meet individual needs, ensuring effective recovery.
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Treatments</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                    At Khayaban Rehab Center, we offer specialized treatment programs for various substance use and mental health disorders. Explore our treatments below.
+                </p>
+            </div>
+            <!-- Interactive Accordion Section -->
+            <div class="lg:w-2/3 mx-auto">
+                <!-- Addiction Treatment -->
+                <div class="border-b border-gray-200 mb-4">
+                    <button class="w-full flex justify-between items-center text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-gray-100" onclick="toggleAccordion('addictionTreatment')">
+                        Addiction Treatment Programs
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" id="arrow-addictionTreatment" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="addictionTreatment" class="hidden px-4 py-2 text-gray-700">
+                        We offer specialized treatment for a variety of addictions, including:
+                        <ul class="list-disc ml-6">
+                            <li>Heroin</li>
+                            <li>Cannabis and Hashish</li>
+                            <li>Amphetamines</li>
+                            <li>Tranquilizers</li>
+                            <li>Crystal Meth</li>
+                            <li>Alcohol</li>
+                        </ul>
+                        Our addiction programs are tailored to meet individual needs, ensuring effective recovery.
+                    </div>
+                </div>
+                <!-- Mental Health Treatment -->
+                <div class="border-b border-gray-200 mb-4">
+                    <button class="w-full flex justify-between items-center text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-gray-100" onclick="toggleAccordion('mentalHealthTreatment')">
+                        Mental Health Treatment Programs
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" id="arrow-mentalHealthTreatment" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="mentalHealthTreatment" class="hidden px-4 py-2 text-gray-700">
+                        We provide evidence-based therapies for a wide range of mental health conditions, including:
+                        <ul class="list-disc ml-6">
+                            <li>Depression and Anxiety</li>
+                            <li>Bipolar Disorder</li>
+                            <li>Schizophrenia</li>
+                            <li>Obsessive-Compulsive Disorder (OCD)</li>
+                            <li>Post-Traumatic Stress Disorder (PTSD)</li>
+                            <li>Eating Disorders</li>
+                            <li>Personality Disorders</li>
+                            <li>ADHD and Autism Spectrum Disorder</li>
+                            <li>Phobias and Panic Disorder</li>
+                            <li>Dissociative Disorders</li>
+                            <li>Borderline Personality Disorder</li>
+                        </ul>
+                        Our team provides comprehensive care and treatment plans customized for each individual.
+                    </div>
                 </div>
             </div>
-            <!-- Mental Health Treatment -->
-            <div class="border-b border-gray-200 mb-4">
-                <button class="w-full text-left text-lg font-medium text-gray-900 py-4 px-4 focus:outline-none hover:bg-gray-100" onclick="toggleAccordion('mentalHealthTreatment')">
-                    Mental Health Treatment Programs
-                </button>
-                <div id="mentalHealthTreatment" class="hidden px-4 py-2 text-gray-700">
-                    We provide evidence-based therapies for a wide range of mental health conditions, including:
-                    <ul class="list-disc ml-6">
-                        <li>Depression and Anxiety</li>
-                        <li>Bipolar Disorder</li>
-                        <li>Schizophrenia</li>
-                        <li>Obsessive-Compulsive Disorder (OCD)</li>
-                        <li>Post-Traumatic Stress Disorder (PTSD)</li>
-                        <li>Eating Disorders</li>
-                        <li>Personality Disorders</li>
-                        <li>ADHD and Autism Spectrum Disorder</li>
-                        <li>Phobias and Panic Disorder</li>
-                        <li>Dissociative Disorders</li>
-                        <li>Borderline Personality Disorder</li>
-                    </ul>
-                    Our team provides comprehensive care and treatment plans customized for each individual.
-                </div>
-            </div>
         </div>
-    </div>
+    </section>
 </section>
+
+<script>
+    function toggleAccordion(sectionId) {
+        const content = document.getElementById(sectionId);
+        const arrow = document.getElementById(`arrow-${sectionId}`);
+        if (content.classList.contains('hidden')) {
+            content.classList.remove('hidden');
+            arrow.classList.add('rotate-180'); // Rotate the arrow
+        } else {
+            content.classList.add('hidden');
+            arrow.classList.remove('rotate-180'); // Reset the rotation
+        }
+    }
+</script>
 
 
     
@@ -464,7 +484,7 @@
 
 <!-- Contact and Map Code -->
 <!-- Contact and Map Code -->
-<section id="contact" class="pt-24">
+<section id="contact" class="pt-24 bg-green-100">
   <section class="text-gray-600 body-font relative">
     <div class="absolute inset-0 bg-gray-300">
       <iframe 
